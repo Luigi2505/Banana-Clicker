@@ -1,34 +1,43 @@
 # 🍌 Banana Clicker
 
-## Integrantes
+Projeto final desenvolvido para a disciplina de Games. Um jogo incremental estilo _cookie-clicker_ com um sistema de progressão por fases e alteração dinâmica de regras/dificuldade.
 
-- Nome 1
-- Nome 2
+## 👥 Integrantes do Grupo
 
-## Descrição
+- Luigi Bilyk
+- Guilherme Albuquerque
+- Eric Juan
 
-Banana Clicker é um jogo casual de clique feito em p5.js.
-Clique no macaco para ganhar bananas, compre melhorias na loja e tente chegar a 10000 bananas!
+## 🔗 Vídeo de Apresentação
 
-## Como usar
+[COLOQUE O LINK DO SEU VÍDEO DO YOUTUBE AQUI]
 
-1. Abra o arquivo `index.html` no navegador
-2. Clique em **JOGAR** na tela inicial
-3. Clique no macaco 🐵 para ganhar bananas 🍌
-4. Vá até a **Loja** para comprar:
-   - **Produção**: itens que geram bananas por segundo automaticamente
-   - **Power-ups**: multiplicadores que aumentam o valor de cada clique
-5. Junte **10.000 bananas** para vencer!
+## 🎮 Como Jogar
 
-## Controles
+1. O objetivo do jogo é progredir pelas **5 fases** para alcançar a vitória.
+2. Na tela principal, clique repetidamente sobre o Macaco para coletar bananas.
+3. Acesse a **Loja** para gastar suas bananas em:
+   - **Produção:** Itens que geram bananas automaticamente por segundo.
+   - **Power-ups:** Melhorias permanentes que multiplicam as bananas ganhas por clique.
+4. Conforme as metas de cada fase são batidas, o cenário muda e as **regras mecânicas** do jogo são alteradas (ex: produção cai pela metade, clique fica mais fraco, preços de itens inflacionam).
+5. Adapte sua estratégia de compra (focar em clique vs focar em produção passiva) de acordo com os debuffs de cada fase.
 
-- **Mouse**: todos os controles são feitos com o clique do mouse
+## 🛠️ Como Executar
 
-## Estrutura do projeto
+O projeto não possui dependências de servidor (backend), utilizando apenas HTML, CSS e a biblioteca `p5.js` via CDN.
 
-```
-banana-clicker/
-├── index.html   → abre o jogo no navegador
-├── sketch.js    → todo o código do jogo em p5.js
-└── README.md    → este arquivo
-```
+**Opção 1 (Local):**
+
+1. Clone ou baixe este repositório para o seu computador.
+2. Abra o arquivo `index.html` diretamente no seu navegador web preferido (Chrome, Firefox, Edge).
+
+**Opção 2 (VS Code):**
+
+1. Abra a pasta do projeto no VS Code.
+2. Utilize a extensão _Live Server_ clicando com o botão direito no `index.html` e selecionando "Open with Live Server".
+
+## 💻 Tecnologias
+
+- JavaScript
+- HTML5 / CSS3
+- p5.js
