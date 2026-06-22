@@ -50,11 +50,11 @@ let fases = [
 let faseAtual = 0;
 
 let itensProducao = [
-  { nome: "Macaquinho", emoji: "🐒", preco: 10, ps: 100000000, qtd: 0 },
-  { nome: "Bananal", emoji: "🌴", preco: 50, ps: 5, qtd: 0 },
-  { nome: "Fazenda", emoji: "🏡", preco: 200, ps: 20, qtd: 0 },
-  { nome: "Fabrica", emoji: "🏭", preco: 500, ps: 50, qtd: 0 },
-  { nome: "Nave", emoji: "🚀", preco: 2000, ps: 200, qtd: 0 },
+  { nome: "Macaquinho", emoji: "🐒", preco: 10, ps: 1000, qtd: 0 },
+  { nome: "Bananal", emoji: "🌴", preco: 50, ps: 30000, qtd: 0 },
+  { nome: "Fazenda", emoji: "🏡", preco: 200, ps: 500000, qtd: 0 },
+  { nome: "Fabrica", emoji: "🏭", preco: 500, ps: 5000000, qtd: 0 },
+  { nome: "Nave", emoji: "🚀", preco: 2000, ps: 100000000, qtd: 0 },
   { nome: "Templo", emoji: "🏛️", preco: 10000, ps: 1000, qtd: 0 },
   { nome: "Portal", emoji: "🌀", preco: 50000, ps: 5000, qtd: 0 },
   { nome: "Buraco Negro", emoji: "🌌", preco: 200000, ps: 20000, qtd: 0 },
