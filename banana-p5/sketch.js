@@ -184,7 +184,8 @@ function inicializarBotoes() {
 }
 
 function fmt(num) {
-  return floor(num).toLocaleString("pt-BR");
+  // Converte para formato local garantindo até 1 casa decimal, sem cortar os decimais flutuantes
+  return Number(num).toLocaleString("pt-BR", { maximumFractionDigits: 1 });
 }
 
 function atualizarStatus() {
