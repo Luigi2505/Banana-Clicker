@@ -50,7 +50,7 @@ let fases = [
 let faseAtual = 0;
 
 let itensProducao = [
-  { nome: "Macaquinho", emoji: "🐒", preco: 10, ps: 10000000, qtd: 0 },
+  { nome: "Macaquinho", emoji: "🐒", preco: 10, ps: 100000000, qtd: 0 },
   { nome: "Bananal", emoji: "🌴", preco: 50, ps: 5, qtd: 0 },
   { nome: "Fazenda", emoji: "🏡", preco: 200, ps: 20, qtd: 0 },
   { nome: "Fabrica", emoji: "🏭", preco: 500, ps: 50, qtd: 0 },
@@ -328,24 +328,22 @@ function desenharJogo() {
 
   bLoja.desenhar();
 
-  textAlign(CENTER);
-  fill(corTxt);
-  textSize(16);
-  // Adiciona um fundo semi-transparente leve atrás dos textos para não sumirem na imagem
-  fill(0, 0, 0, corTxt === 255 ? 100 : 0);
+  // --- NOVA CAIXA DE TEXTO DA FASE (FONTE MAIOR + FUNDO BRANCO) ---
+  fill(255, 255, 255, 230); // Fundo branco levemente translúcido
   noStroke();
-  rect(LARGURA / 2 - 150, 90, 300, 50, 10);
+  rect(LARGURA / 2 - 200, 80, 400, 70, 10);
 
-  fill(corTxt);
+  fill(0); // Fonte preta para ler bem no fundo branco
+  textAlign(CENTER);
+  textSize(24); // Fonte maior para o nome
   text(fases[faseAtual].nome, LARGURA / 2, 110);
-  textSize(12);
-  text(fases[faseAtual].desc, LARGURA / 2, 130);
 
+  textSize(16); // Fonte maior para a descrição
+  text(fases[faseAtual].desc, LARGURA / 2, 135);
+
+  // --- MACACO CENTRAL ---
   textSize(100);
   text("🐵", LARGURA / 2, 230);
-  noFill();
-  stroke(corTxt === 0 ? 180 : 80);
-  ellipse(LARGURA / 2, 195, 160, 160);
   noStroke();
 
   desenharBarraProgresso();
@@ -463,11 +461,14 @@ function desenharPainelPowerups() {
 function desenharBarraProgresso() {
   let meta = fases[faseAtual].meta;
   let progresso = constrain(bananas / meta, 0, 1);
-  let barX = 40,
-    barY = 410,
-    barW = LARGURA - 80,
-    barH = 20;
 
+  // Eixo Y dinâmico para ficar colado no footer de powerups
+  let barX = 40,
+    barY = ALTURA - 160,
+    barW = LARGURA - 80,
+    barH = 25;
+
+  // Desenho da barra
   fill(220);
   stroke(0);
   rect(barX, barY, barW, barH);
@@ -475,21 +476,17 @@ function desenharBarraProgresso() {
   rect(barX, barY, barW * progresso, barH);
   noStroke();
 
-  let corTxt = fases[faseAtual].txt;
-  fill(corTxt);
+  // --- CAIXA DE TEXTO DO PROGRESSO (FONTE MAIOR + FUNDO BRANCO) ---
+  fill(255, 255, 255, 230);
+  rect(LARGURA / 2 - 250, barY + barH + 10, 500, 32, 8);
 
-  if (corTxt === 255) {
-    fill(0, 0, 0, 150);
-    rect(LARGURA / 2 - 120, barY + barH + 2, 240, 18, 4);
-    fill(255);
-  }
-
+  fill(0); // Texto preto
   textAlign(CENTER);
-  textSize(12);
+  textSize(16);
   text(
     `Progresso Geral: ${fmt(bananas)} / ${fmt(meta)} 🍌`,
     LARGURA / 2,
-    barY + barH + 16,
+    barY + barH + 32,
   );
 }
 
