@@ -1,14 +1,17 @@
 # 🍌 Banana Clicker
 
 ## Integrantes
+
 - Nome 1
 - Nome 2
 
 ## Descrição
+
 Banana Clicker é um jogo casual de clique feito em p5.js.
-Clique no macaco para ganhar bananas, compre melhorias na loja e tente chegar a 10.000 bananas!
+Clique no macaco para ganhar bananas, compre melhorias na loja e tente chegar a 10000 bananas!
 
 ## Como usar
+
 1. Abra o arquivo `index.html` no navegador
 2. Clique em **JOGAR** na tela inicial
 3. Clique no macaco 🐵 para ganhar bananas 🍌
@@ -18,9 +21,11 @@ Clique no macaco para ganhar bananas, compre melhorias na loja e tente chegar a 
 5. Junte **10.000 bananas** para vencer!
 
 ## Controles
+
 - **Mouse**: todos os controles são feitos com o clique do mouse
 
 ## Estrutura do projeto
+
 ```
 banana-clicker/
 ├── index.html   → abre o jogo no navegador
