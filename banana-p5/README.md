@@ -10,7 +10,7 @@ Projeto final desenvolvido para a disciplina de Games. Um jogo incremental estil
 
 ## 🔗 Vídeo de Apresentação
 
-[COLOQUE O LINK DO SEU VÍDEO DO YOUTUBE AQUI]
+https://www.youtube.com/watch?v=OQVcqRoq-dY
 
 ## 🎮 Como Jogar
 
